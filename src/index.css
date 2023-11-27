@@ -1,5 +1,3 @@
-@import-normalize; /* bring in normalize.css styles */
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,4 +10,245 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  padding: 30px 5px;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*   User */
+.description {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+.avatar {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.tag {
+  color: #9ca7b2;
+  margin-bottom: 8px;
+}
+
+
+
+.location {
+  color: #9ca7b2;
+  margin-bottom: 8px;
+}
+
+
+.profile {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #c7c7c7;
+  padding-top: 30px;
+  background: #f7f7f7;
+  margin-bottom: 100px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  padding: 5px;
+  background: #f3f6f9;
+  border-top: 1px solid #dce7f3;
+}
+
+.stats li:not(:first-child) {
+  border-left: 1px solid #dce7f3;
+}
+
+.label {
+  margin-bottom: 5px;
+  color: #9ca7b2;
+  font-weight: 500;
+}
+
+.quantity {
+  font-weight: 700;
+  color: #414141;
+}
+
+/* Friends */
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 3px 5px #c7c3c3;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.status {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+
+.online {
+  
+  background: #4fae50;
+}
+
+.offline {
+  
+  background: #fb554f;
+}
+
+.name-fr {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+/* Data */ 
+.item-stat {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 20%;
+  align-items: center;
+  box-shadow: 0px 0px 0px 1px #6a6a6a;
+  border-radius: 4px;
+}
+
+.percentage,
+.label {
+  padding: 8px;
+  
+}
+
+.percentage {
+  font-size: 20px;
+}
+
+.statistics {
+  margin-bottom: 100px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+
+/* Transaction */
+.line td {
+  text-align: center;
+  padding: 7px;
+  color: #a4a9b1;
+  text-transform: capitalize;
+}
+
+.line:nth-child(2n) {
+  background: #ecf1f3;
+}
+.transaction-history {
+  margin-bottom: 100px;
+  width: 100%;
+   
+}
+
+thead {
+  background: #00bcd5;
+}
+
+thead tr th {
+  padding: 7px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; 
+  
+}
+
+tbody tr:nth-child(odd) {
+  background-color: white; 
+  
+}
+.stat-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.friend-list {
+  padding-bottom: 70px;
 }
