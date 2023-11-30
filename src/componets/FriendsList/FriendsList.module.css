@@ -13,7 +13,12 @@
     margin-bottom: 20px;
   }
   
-  
+  .status {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+  }
   .online {
     
     background: #4fae50;
@@ -29,12 +34,7 @@
     font-weight: 600;
   }
   
-.status {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-  }
+
   .friendlist {
     padding-bottom: 70px;
   }
